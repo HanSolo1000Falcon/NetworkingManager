@@ -45,7 +45,7 @@ public class NetworkingManager : MonoBehaviourPunCallbacks
         }
     }
     
-    public void SendEvent(string command, RaiseEventOptions options, object[] parameters)
+    public void SendEvent(string command, RaiseEventOptions options, params object[] parameters)
     {
         if (!NetworkSystem.Instance.InRoom)
             return;
